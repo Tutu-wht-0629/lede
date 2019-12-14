@@ -66,8 +66,7 @@ jobs:
           rm -f ./.config*
           touch ./.config
           
-          
-      - name: 同步最新的源码
+      - name: Update 
         run: |
           git remote add openwrt https://github.com/coolsnowwolf/lede.git
           git pull openwrt master
